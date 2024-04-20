@@ -1,5 +1,5 @@
-name: "Cloudflare Pages GitHub Action"
-description: "Publish to Cloudflare Pages"
+name: "Cloudflare Pages GitHub Action with specify Production Branch"
+description: "Publish to Cloudflare Pages added function to deploy to a specific branch"
 branding:
   icon: "upload-cloud"
   color: "orange"
