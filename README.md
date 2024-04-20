@@ -1,6 +1,6 @@
 # Cloudflare Pages GitHub Action with extension specify production branch
 
-This is forked from [page-action](https://github.com/cloudflare/pages-action). 
+This is fork from [page-action](https://github.com/cloudflare/pages-action). 
 
 GitHub Action for creating Cloudflare Pages deployments, using the new [Direct Upload](https://developers.cloudflare.com/pages/platform/direct-upload/) feature and [Wrangler](https://developers.cloudflare.com/pages/platform/direct-upload/#wrangler-cli) integration.
 
