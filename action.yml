@@ -1,5 +1,5 @@
-name: "Cloudflare Pages GitHub Action with specify Production Branch"
-description: "Publish to Cloudflare Pages added function to deploy to a specific branch"
+name: "Cloudflare Pages GitHub Action"
+description: "Publish to Cloudflare Pages"
 branding:
   icon: "upload-cloud"
   color: "orange"
@@ -31,7 +31,7 @@ inputs:
   wranglerVersion:
     description: "The version of Wrangler to use"
     required: false
-    default: "3"
+    default: "2"
 runs:
-  using: "node20"
+  using: "node16"
   main: "index.js"

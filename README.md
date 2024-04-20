@@ -1,4 +1,6 @@
-# Cloudflare Pages GitHub Action
+# Cloudflare Pages GitHub Action with extension specify production branch
+
+This is forked from [page-action](https://github.com/cloudflare/pages-action). 
 
 GitHub Action for creating Cloudflare Pages deployments, using the new [Direct Upload](https://developers.cloudflare.com/pages/platform/direct-upload/) feature and [Wrangler](https://developers.cloudflare.com/pages/platform/direct-upload/#wrangler-cli) integration.
 
@@ -20,7 +22,7 @@ GitHub Action for creating Cloudflare Pages deployments, using the new [Direct U
        name: Publish to Cloudflare Pages
        steps:
          - name: Checkout
-           uses: actions/checkout@v3
+           uses: actions/checkout@v4
 
          # Run a build step here if your project requires
 
@@ -33,6 +35,8 @@ GitHub Action for creating Cloudflare Pages deployments, using the new [Direct U
              directory: YOUR_BUILD_OUTPUT_DIRECTORY
              # Optional: Enable this if you want to have GitHub Deployments triggered
              gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+             # Required: The name of the branch you want to deploy to production
+             productionBranch: main
              # Optional: Switch what branch you are publishing to.
              # By default this will be the branch which triggered this workflow
              branch: main
